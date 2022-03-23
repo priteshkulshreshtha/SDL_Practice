@@ -43,7 +43,7 @@ GameObject::~GameObject()
 
 void GameObject::update()
 {
-	if (std::abs(forceX) > 0.01 || std::abs(forceY) > 0.01)
+	if (std::abs(forceX) > 0.1 && std::abs(forceY) > 0.1)
 	{
 		float frictionX, frictionY;
 		
